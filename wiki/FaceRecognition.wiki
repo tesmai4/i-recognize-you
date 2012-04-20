@@ -1,0 +1,47 @@
+#labels Featured,Phase-Design,Phase-Implementation
+
+=Face recognition, Rozpoznawanie twarzy=
+==Introduction==
+
+Traditional forms of application security and access to services, such as PINs, passwords and logins are vulnerable to interception by unauthorized persons, you can forget or lose the stored somewhere on a piece of paper. The other hand, are becoming increasingly popular as a security key contained in the body. The face is one of those keys. It is the unique and special for everyone. Face recognition system can be used, beyond the control of access to the database search images - such as automatic retrieval of images, where we are, or for access control, eg for areas where we should stay or not. In addition, security in the form of biological keys are much cheaper than solutions using smart cards, proximity devices or dongles on a memory stick.
+
+==Purpose of research==
+
+The aim of my research was to develop a method of verifying the identity of the person using the face as a biological key that is unique and easy for the casual user, because you only need to look to make the authorization.
+
+==Materials and methods==
+
+The task of face detection is to divide the input data in the form of images into multiple classes, which are equivalent to people. As you know, these images may contain noise, or pixels with no link with the face. In addition, the image pixels are not entirely random. Between these areas there are random areas creating certain patterns that may indicate the presence of certain objects, such as nose, eyes or mouth, and include the relative distance between them. These characteristic patterns / features are called eigenfaces, or major components. Key features (eigenfaces) for the face are being developed using PCA (Principal Component Analysis). Each feature (eigenface) is only a representation of facial features, which can be seen in the picture or not. If the feature is present in an image more then its share in the corresponding eigenface is greater. Otherwise, when the degree of the features are almost absent or less then its share is smaller in total eigenfaces or no. Described above, part, determine the extent to which a specific characteristic is evident in obrazie.Wykorzystując all eigenfaces obtained from the input images can reproduce the original images from the eigenfaces, or make only a partial reconstruction of the image by approximation. For face recognition are important only weights obtained by the PCA algorithm. Balance means the amount of talking about it or face different from the typical face represented by the eigenfaces. Using these weights allows you to specify whether the image contains a face, and whether there are similar face to the face. This task was used OpenCV library, which has a set of APIs to perform tasks in the field of image processing.
+
+To be able to verify the identity of operations based on facial characteristics, it requires the prior introduction of the so-called. the base face. Face database in this case is properly treated and stored images of the face only of a person and other persons who are in the database. The file names are included data on individuals whose faces are brought together in this simple database. Both the acts of his face to the base and its recognition can be divided into three common phases, listed and described below:
+
+    Acquisition, the acquisition of the image. Lighting conditions and camera positioning itself affect the image, and therefore should be close to your face when you enter the database and comparing it with her.
+    The next step is to detect faces in an image and save it in memory and adjusting the size of the other faces in the database. If the application size is 100 pixels wide and tall. To ensure that a person's face is directed straight into the camera, is made to check the visibility of the eyes. Status of the eyelids, closed or open, it does not matter.
+    Then, the image containing the face-found is subjected to morphological operations, which are designed to remove noise and unnecessary background face, uniformity of brightness. Morphological operations, make the effectiveness of face recognition algorithm increases.
+
+The preceding steps for adding images to the database is saved to a file with the appropriate name in the format: name surname number of hours minutes seconds. For each face is ten images recorded to improve the effectiveness of facial recognition algorithm, because the face can always be at least in a different position. Enter your face to the base is easy. You just enter your details and look at the camera, and the rest will be done automatically. Face recognition uses the same method as above, but they are carried out both during the reading of the characteristics of the algorithm, with faces faces in the database, as well as for verification of the face subject to verification. Verification is intended to ascertain whether a person is in the database or not.
+
+==Results==
+
+Face detection in an image obtained from the camera runs without any problems. Only people with black skin color or situated in a dark room can be not noticed. In addition, before the discovery of the face is visible eyes checked, because this is not done to get in effect a different face. Acquired facial image must be subjected to morphological operations, such as normalization or histogram, background removal, in which the face to the subsequent recognition of a person's results were correct. PCA method used to extract the essential features of the face is unfortunately susceptible to environmental conditions in which the facial image is taken for the purpose of verification of identity and should be diagnosed before the appropriate steps to prepare the image of the face to compare with the database, or prior to the base face. Properly chosen methods of implementation have a direct impact on the speed and quality of face detection. The more pictures provides the basis for the person, the more effective face recognition system is shown, because too few face shots that negatively affected the efficiency of diagnosis, or rather lack thereof.
+
+==Discussion==
+
+While facial recognition, you may encounter the following error diagnosis based on:
+
+    * erroneous diagnosis - the attribution of verified face to face someone who is in the database,
+    * false rejection of the face - the face occurs in the database, and is not recognized,
+    * false acceptance - face to face is assigned to someone else, despite the occurrence of this face is not in the database.
+
+Erroneous results of face recognition using PCA is mainly due to lighting conditions when entering the user to the database as well as during image acquisition includes face to recognize. Moreover, the same background on which there is a face can be confusing for the algorithm to recognize the man. Despite these inconveniences, PCA allows for quick and positive verification of identity, provided that the earlier steps are performed in preparation for facial image recognition, so that was the least confused by the algorithm with the background.
+
+==*Bibliography*==
+  # Introduction to Face Detection and Face Recognition - Shevrim Emami ze strony: http://www.shervinemami.info/faceRecognition.html
+  # Learning OpenCV, Computer Vision with the OpenCv Library – Gary Bradski, Adrian Kaehler
+
+==*Photos and videos*==
+Application performance<br>
+<wiki:video url="http://www.youtube.com/watch?v=XsPVnQTKYR4"/>
+<br><br>
+The appearance of the interface<br>
+http://www.kni.iit.pwste.edu.pl/images/maska.png
