@@ -1,0 +1,38 @@
+C:\Users\Marek Bar\Documents\Visual Studio 2008\Projects\iRecognizeYou\iRecognizeYou\bin\Debug\iRecognizeYou.exe
+C:\Users\Marek Bar\Documents\Visual Studio 2008\Projects\iRecognizeYou\iRecognizeYou\bin\Debug\iRecognizeYou.pdb
+C:\Users\Marek Bar\Documents\Visual Studio 2008\Projects\iRecognizeYou\iRecognizeYou\bin\Debug\EllipticalButton.dll
+C:\Users\Marek Bar\Documents\Visual Studio 2008\Projects\iRecognizeYou\iRecognizeYou\bin\Debug\Emgu.CV.dll
+C:\Users\Marek Bar\Documents\Visual Studio 2008\Projects\iRecognizeYou\iRecognizeYou\bin\Debug\Emgu.CV.ML.dll
+C:\Users\Marek Bar\Documents\Visual Studio 2008\Projects\iRecognizeYou\iRecognizeYou\bin\Debug\Emgu.CV.UI.dll
+C:\Users\Marek Bar\Documents\Visual Studio 2008\Projects\iRecognizeYou\iRecognizeYou\bin\Debug\Emgu.Util.dll
+C:\Users\Marek Bar\Documents\Visual Studio 2008\Projects\iRecognizeYou\iRecognizeYou\bin\Debug\ZedGraph.dll
+C:\Users\Marek Bar\Documents\Visual Studio 2008\Projects\iRecognizeYou\iRecognizeYou\bin\Debug\Emgu.Util.xml
+C:\Users\Marek Bar\Documents\Visual Studio 2008\Projects\iRecognizeYou\iRecognizeYou\bin\Debug\Emgu.CV.xml
+C:\Users\Marek Bar\Documents\Visual Studio 2008\Projects\iRecognizeYou\iRecognizeYou\bin\Debug\Emgu.CV.ML.xml
+C:\Users\Marek Bar\Documents\Visual Studio 2008\Projects\iRecognizeYou\iRecognizeYou\bin\Debug\Emgu.CV.UI.xml
+C:\Users\Marek Bar\Documents\Visual Studio 2008\Projects\iRecognizeYou\iRecognizeYou\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Marek Bar\Documents\Visual Studio 2008\Projects\iRecognizeYou\iRecognizeYou\obj\Debug\iRecognizeYou.Forma.resources
+C:\Users\Marek Bar\Documents\Visual Studio 2008\Projects\iRecognizeYou\iRecognizeYou\obj\Debug\iRecognizeYou.Learn.resources
+C:\Users\Marek Bar\Documents\Visual Studio 2008\Projects\iRecognizeYou\iRecognizeYou\obj\Debug\iRecognizeYou.Properties.Resources.resources
+C:\Users\Marek Bar\Documents\Visual Studio 2008\Projects\iRecognizeYou\iRecognizeYou\obj\Debug\iRecognizeYou.csproj.GenerateResource.Cache
+C:\Users\Marek Bar\Documents\Visual Studio 2008\Projects\iRecognizeYou\iRecognizeYou\obj\Debug\iRecognizeYou.exe
+C:\Users\Marek Bar\Documents\Visual Studio 2008\Projects\iRecognizeYou\iRecognizeYou\obj\Debug\iRecognizeYou.pdb
+C:\Users\Marek Bar\Desktop\iRecognizeYou\iRecognizeYou\bin\Debug\iRecognizeYou.exe
+C:\Users\Marek Bar\Desktop\iRecognizeYou\iRecognizeYou\bin\Debug\iRecognizeYou.pdb
+C:\Users\Marek Bar\Desktop\iRecognizeYou\iRecognizeYou\bin\Debug\EllipticalButton.dll
+C:\Users\Marek Bar\Desktop\iRecognizeYou\iRecognizeYou\bin\Debug\Emgu.CV.dll
+C:\Users\Marek Bar\Desktop\iRecognizeYou\iRecognizeYou\bin\Debug\Emgu.CV.ML.dll
+C:\Users\Marek Bar\Desktop\iRecognizeYou\iRecognizeYou\bin\Debug\Emgu.CV.UI.dll
+C:\Users\Marek Bar\Desktop\iRecognizeYou\iRecognizeYou\bin\Debug\Emgu.Util.dll
+C:\Users\Marek Bar\Desktop\iRecognizeYou\iRecognizeYou\bin\Debug\ZedGraph.dll
+C:\Users\Marek Bar\Desktop\iRecognizeYou\iRecognizeYou\bin\Debug\Emgu.Util.xml
+C:\Users\Marek Bar\Desktop\iRecognizeYou\iRecognizeYou\bin\Debug\Emgu.CV.xml
+C:\Users\Marek Bar\Desktop\iRecognizeYou\iRecognizeYou\bin\Debug\Emgu.CV.ML.xml
+C:\Users\Marek Bar\Desktop\iRecognizeYou\iRecognizeYou\bin\Debug\Emgu.CV.UI.xml
+C:\Users\Marek Bar\Desktop\iRecognizeYou\iRecognizeYou\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Marek Bar\Desktop\iRecognizeYou\iRecognizeYou\obj\Debug\iRecognizeYou.Forma.resources
+C:\Users\Marek Bar\Desktop\iRecognizeYou\iRecognizeYou\obj\Debug\iRecognizeYou.Learn.resources
+C:\Users\Marek Bar\Desktop\iRecognizeYou\iRecognizeYou\obj\Debug\iRecognizeYou.Properties.Resources.resources
+C:\Users\Marek Bar\Desktop\iRecognizeYou\iRecognizeYou\obj\Debug\iRecognizeYou.csproj.GenerateResource.Cache
+C:\Users\Marek Bar\Desktop\iRecognizeYou\iRecognizeYou\obj\Debug\iRecognizeYou.exe
+C:\Users\Marek Bar\Desktop\iRecognizeYou\iRecognizeYou\obj\Debug\iRecognizeYou.pdb
