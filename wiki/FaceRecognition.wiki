@@ -1,6 +1,6 @@
 #labels Featured,Phase-Design,Phase-Implementation
-
 =Face recognition, Rozpoznawanie twarzy=
+
 ==Introduction==
 
 Traditional forms of application security and access to services, such as PINs, passwords and logins are vulnerable to interception by unauthorized persons, you can forget or lose the stored somewhere on a piece of paper. The other hand, are becoming increasingly popular as a security key contained in the body. The face is one of those keys. It is the unique and special for everyone. Face recognition system can be used, beyond the control of access to the database search images - such as automatic retrieval of images, where we are, or for access control, eg for areas where we should stay or not. In addition, security in the form of biological keys are much cheaper than solutions using smart cards, proximity devices or dongles on a memory stick.
