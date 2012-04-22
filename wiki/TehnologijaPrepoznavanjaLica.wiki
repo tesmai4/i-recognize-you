@@ -4,7 +4,7 @@
 
 = * Tehnologija prepoznavanja lica, Face Detection * =
 Autor: Marek <b> Bar </b> <br/>
-Studentska organizacija i sveučilišni ime: <b> Student računarstva u State College of Technology i ekonomiju. ks. Bronislaw Markiewicz u Jaroslawa </b> <br/>
+Studentska organizacija i sveučilišni ime: <b> Studenckie Koło Informatyków w Państwowej Wyższej Szkole Techniczno-Ekonomicznej im. ks. Bronislaw Markiewicz u Jarosław </b> <br/>
 Znanstveni savjetnik: <b> dr. sc. Lucjan Pelc </b> <br/>
 
 ==Uvod==
@@ -54,9 +54,9 @@ To sažima svoju aplikaciju za prepoznavanje lica na temelju analize glavnih kom
 ==Dodaci==
 
 === Slika 1: Uvod u tzv lice. lice baza podataka, razvoja vlastitog made in yEd. ===
-https://sites.google.com/site/napiszprogrampl/home/Wprowadzanie 20twarzy% 20i%%% 20twarzy.png 20bazy
+https://sites.google.com/site/napiszprogrampl/home/Wprowadzanie 20twarzy%20i%%%20twarzy.png 20bazy
 === Slika 2: Face Detection (Pokretanje na desnoj strani), razviti vlastitu je u yEd. ===
-https://sites.google.com/site/napiszprogrampl/home/Rozpoznawanie% 20twarzy.png
+https://sites.google.com/site/napiszprogrampl/home/Rozpoznawanie%20twarzy.png
 Film === To pokazuje vaš zahtjev ===
 
 <wiki:video url="http://www.youtube.com/watch?v=zi7fCxtdUKs" width="480' height="360"/>
