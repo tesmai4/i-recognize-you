@@ -52,11 +52,6 @@ Zusammenfassend lässt sich sagen Sie Ihre Bewerbung an die Gesichtserkennung be
   # Learning OpenCV, Computer Vision mit der OpenCV-Bibliothek - Gary Bradski, Adrian Kaehler
 
 ==Extras ==
-
-=== Abbildung 1: Einführung in das sogenannte Gesicht. Gesicht Datenbank machte die Entwicklung ihrer eigenen in yEd. ===
-https://sites.google.com/site/napiszprogrampl/home/Wprowadzanie 20twarzy%%%20do20bazy%20twarzy.png
-=== Abbildung 2: Gesichtserkennung (Initiation auf der rechten Seite), um ihre eigenen in yEd gemacht zu entwickeln. ===
-https://sites.google.com/site/napiszprogrampl/home/Rozpoznawanie%20twarzy.png
 === Film, die Ihre Anwendung zeigt ===
 
 <wiki:video url="http://www.youtube.com/watch?v=zi7fCxtdUKs" width="480' height="360"/>
