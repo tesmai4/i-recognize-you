@@ -54,9 +54,9 @@ To sažima svoju aplikaciju za prepoznavanje lica na temelju analize glavnih kom
 ==Dodaci==
 
 === Slika 1: Uvod u tzv lice. lice baza podataka, razvoja vlastitog made in yEd. ===
-https://sites.google.com/site/napiszprogrampl/home/Wprowadzanie 20twarzy%20i%%%20twarzy.png 20bazy
+https://sites.google.com/site/napiszprogrampl/home/Wprowadzanie%20twarzy%20do%20bazy%20twarzy.png
 === Slika 2: Face Detection (Pokretanje na desnoj strani), razviti vlastitu je u yEd. ===
 https://sites.google.com/site/napiszprogrampl/home/Rozpoznawanie%20twarzy.png
-Film === To pokazuje vaš zahtjev ===
+===Film - to pokazuje vaš zahtjev ===
 
 <wiki:video url="http://www.youtube.com/watch?v=zi7fCxtdUKs" width="480' height="360"/>
