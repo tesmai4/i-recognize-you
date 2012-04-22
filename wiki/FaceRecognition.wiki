@@ -1,7 +1,7 @@
 #labels Featured,Phase-Design,Phase-Implementation
 <wiki:toc max_depth="3" />
 
-
+#sidebar
 =*Face Recognition, Rozpoznawanie twarzy*=
 Author: <b> Marek Bar </b> <br/>
 Student organisation and university name: <b>Studenckie Koło Informatyków w Państwowej Wyższej Szkole Techniczno-Ekonomicznej im. ks. Bronisław Markiewicz in Jarosław </b> <br/>
