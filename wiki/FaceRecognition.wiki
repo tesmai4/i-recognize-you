@@ -53,9 +53,9 @@ To sum up your application to face recognition based on principal component anal
 
 ==Extras==
 
-=== Figure 1: introduction to the so-called face. face database, the development of their own made in Y e. ===
+=== Figure 1: introduction to the so-called face. face database, the development of their own made in yEd. ===
 https://sites.google.com/site/napiszprogrampl/home/Wprowadzanie%20twarzy%20do%20bazy%20twarzy.png
-=== Figure 2: Face Detection (Initiation to the right), to develop their own made in Y e. ===
+=== Figure 2: Face Detection (Initiation to the right), to develop their own made in yEd. ===
 https://sites.google.com/site/napiszprogrampl/home/Rozpoznawanie%20twarzy.png
 === Movie that shows your application ===
 
