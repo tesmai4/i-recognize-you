@@ -1,0 +1,62 @@
+#labels Featured,Phase-Implementation
+<wiki:toc max_depth="3" />
+
+
+= * Gesichtserkennung, Rozpoznawanie twarzy * =
+Autor: Marek <b> Bar </b> <br/>
+Studentische Organisation und Universität Name: <b> Studenckie Koło Informatyków w Państwowej Wyższej Szkole Techniczno-Ekonomicznej im. ks. Bronisław Markiewicz in Jarosław </b> <br/>
+Wissenschaftlicher Berater: <b> dr. Lucjan Pelc </b> <br/>
+
+== Einleitung ==
+
+Traditionelle Formen der Applikations-Sicherheit und den Zugang zu Diensten wie PINs, Passwörter und Logins anfällig für Abfangen durch unbefugte Personen sind, können Sie vergessen oder verloren haben irgendwo auf einem Stück Papier gespeichert. Die anderen werden immer beliebter als Sicherheitsschlüssel im Körper enthalten ist. Das Gesicht ist einer dieser Tasten. Es ist die einzigartige und besondere für jedermann. Gesichtserkennung System kann verwendet werden, die außerhalb der Kontrolle des Zugriffs auf die Datenbank-Suche Bilder - wie automatischen Abruf von Bildern, wo wir sind, oder für die Zugangskontrolle, für Bereiche, wo wir bleiben, oder sollte nicht zB. Darüber hinaus sind Sicherheiten in Form von biologischen Tasten viel billiger als Lösungen mit Smart Cards, Näherungsschalter oder Dongles auf dem Memory Stick.
+
+==Zweck der Forschung ==
+
+Das Ziel meiner Forschung war es, eine Methode zur Überprüfung der Identität der Person mit dem Gesicht als biologische Schlüssel, der einzigartig und einfach für den gelegentlichen Anwender zu entwickeln, denn Sie brauchen nur zu schauen, um die Genehmigung zu machen.
+
+==Material und Methoden ==
+
+Die Aufgabe der Gesichtserkennung ist, um die Eingabedaten in Form von Bildern in mehrere Klassen, die äquivalent zu Personen gehören zu unterteilen. Wie Sie wissen, können diese Bilder Störungen oder Pixel, der keine Verbindung mit dem Gesicht enthalten. Darüber hinaus sind die Bildpixel nicht vollständig zufällig. Zwischen diesen Bereichen gibt es zufällige Bereiche schaffen bestimmte Muster, die das Vorhandensein von bestimmten Objekten, z. B. Nase, Augen oder Mund zeigen, und kann auch die relative Distanz zwischen ihnen. Diese charakteristische Muster / Features werden Eigengesichtern oder wichtige Komponenten genannt. Key-Features (Eigengesichtern) für das Gesicht sind in der Entwicklung mit PCA (Principal Component Analysis). Jedes Merkmal (eigenface) ist nur eine Darstellung der Gesichtszüge, die auf dem Bild ist oder nicht gesehen werden kann. Wenn das Feature vorhanden ist, in einem Bild mehr als seinen Anteil an der entsprechenden eigenface größer ist. Andernfalls, wenn der Grad der Features fast nicht vorhanden sind oder weniger als ihr Anteil ist kleiner insgesamt Eigengesichtern oder gar keine. Oben beschrieben, ein Teil, das Ausmaß, zu dem ein bestimmtes Merkmal zeigt sich in obrazie.Wykorzystując alle Eigengesichtern aus den Eingangsdaten erhaltenen Bilder können die Originalbilder aus den Eigengesichtern reproduzieren, oder machen nur eine teilweise Rekonstruktion des Bildes durch Annäherung. Für die Gesichtserkennung sind wichtig, nur Gewichte von der PCA-Algorithmus erhalten. Balance bedeutet die Menge darüber zu reden, oder stellen sich von dem typischen Gesicht von den Eigengesichtern vertreten. Mit diesen Gewichten können Sie angeben, ob das Bild ein Gesicht enthält, und ob es ähnlich von Angesicht zu Angesicht. Diese Aufgabe wurde OpenCV-Bibliothek, die eine Reihe von APIs, um Aufgaben im Bereich der Bildverarbeitung durchzuführen hat eingesetzt.
+
+Um die Identität von Operationen an Gesichts Eigenschaften zu überprüfen, bedarf es der Stand der Einführung der sogenannten. die Grundfläche. Gesichts-Datenbank in diesem Fall ordnungsgemäß behandelt und gelagert Bilder des Gesichts nur von einer Person und anderen Personen, die in der Datenbank sind. Die Dateinamen werden Daten über Personen, deren Gesichter sind in diesem einfachen Datenbank enthalten gebracht. Sowohl die Taten der sein Gesicht mit der Basis und seine Anerkennung lassen sich in drei Phasen gemeinsam, aufgelistet und beschrieben unterteilt werden:
+  # Akquisition, die Übernahme des Bildes. Lichtverhältnissen und Kamera positioniert sich das Bild beeinflussen und sollten daher nah an Ihrem Gesicht, wenn Sie die Datenbank, und geben Sie den Vergleich mit ihr.
+  # Der nächste Schritt ist, um Gesichter in einem Bild erkennen und speichern Sie sie in Erinnerung. Die Gesichtserkennung ist der Prozess der Suche nach dem Bild des Gesichts und kehrte in die Lage und Abmessungen der Umgebung. Um das Gesicht zu erkennen ist ausgebildete Haar Klassifikator mit der OpenCV Bibliothek geliefert verwendet. Dann passen Sie die Größe an die Größe des detektierten Gesicht der anderen Flächen in der Datenbank vorgenommen. Wenn die Anwendung Größe ist 100 Pixel breit und hoch. Um sicherzustellen, dass das Gesicht einer Person direkt in die Kamera gerichtet ist, um die Sichtbarkeit der Augen zu überprüfen. Der Status der Augenlider, geschlossene oder offene, spielt es keine Rolle.
+  # Dann wird das Bild mit dem Gesicht zu finden, um morphologische Operationen (Pre-Processing / Vorbereitung), die zur Geräuschdämpfung und unnötige Hintergrund Gesicht, die Gleichmäßigkeit der Helligkeit zu entfernen unterworfen sind. Das Rauschen hinzugefügt, um die Pixel-Werte kann effektiv seine Bedeutung ändern (was ist das Informationssystem) oder teilweise seine Bedeutung zu verzerren. Morphologische Operationen, stellen die Wirksamkeit der Algorithmus zur Gesichtserkennung erhöht.
+
+Vorname Nachname Anzahl der Stunden, Minuten Sekunden: die vorangehenden Schritte für das Hinzufügen von Bildern in die Datenbank wird in einer Datei mit dem entsprechenden Namen in dem Format gespeichert. Für jedes Gesicht ist zehn Bilder gespeichert Gesicht (könnte mehr oder weniger), um die wirksame Anerkennung Algorithmus zu verbessern, weil das Gesicht immer mindestens in einer anderen Position sein. Geben Sie Ihr Gesicht an der Basis ist ganz einfach. Sie geben einfach Ihre Daten ein und schauen in die Kamera, und der Rest wird automatisch erledigt werden. Es besteht auch die Möglichkeit einer Angesicht zu Angesicht mit der Datenbank-Datei in diesem Format, der Name der Datei mit dem Namen konfrontiert. Akzeptierte Dateitypen: png, gif, jpg, bmp.
+Gesichtserkennung ist ein Prozess, der einen Namen / ID auf das Gesicht odnieseniu in der Fläche des sogenannten paasujących überprüft zuzuweisen versucht. basierend auf dem Gesicht. Gesichtserkennung mit den gleichen Verfahren wie oben, aber sie sind sowohl während des Lesens der Merkmale des Algorithmus durchgeführt, mit Flächen Flächen in der Datenbank, als auch für die Kontrolle des Gesichts nachgeprüft werden. Prüfung dient dazu festzustellen, ob eine Person in der Datenbank ist oder nicht.
+
+==Ergebnisse==
+
+Gesichtserkennung in einem Bild von der Kamera aufgenommenen läuft ohne Probleme. Nur Menschen mit schwarzer Hautfarbe oder liegt in einem dunklen Raum kann nicht wahrgenommen werden. Darüber hinaus vor der Entdeckung des Gesichts sichtbar Augen überprüft, da dies nicht getan wird, um in der Tat ein anderes Gesicht bekommen. Erworbene Gesichtsbild müssen morphologische Operationen, wie z. B. Normalisierung oder Histogramm, Hintergrund entfernen, in dem das Gesicht zur nachträglichen Erfassung einer Person Ergebnisse waren korrekt unterzogen werden. PCA-Methode verwendet, um die wesentlichen Merkmale des Gesichts zu extrahieren ist leider anfällig für Umweltbedingungen, unter denen das Gesichtsbild zum Zwecke der Überprüfung der Identität genommen wird und sollte vor den entsprechenden Schritten diagnostiziert werden, um das Bild des Gesichts zu erstellen, um das zu vergleichen Datenbank oder vor der Grundfläche. Richtig gewählte Methoden der Umsetzung haben einen direkten Einfluss auf die Geschwindigkeit und Qualität der Gesichtserkennung. Je mehr Bilder liefert die Grundlage für die Person, desto effektiver ist die Gesichtserkennung System angezeigt wird, weil zu wenige Aufnahmen von Gesichtern, die sich negativ auf die Effizienz von Diagnose betroffen sind, oder vielmehr deren Fehlen.
+
+==Diskussion ==
+
+Während die Gesichtserkennung, können Sie den folgenden Fehler-Diagnose basierend auf:
+  # Falsche Diagnose - die Zuordnung der überprüften Gesicht an jemanden, der in der Datenbank ist konfrontiert,
+  # False Rejection im Gesicht - das Gesicht in der Datenbank auftritt, und wird nicht erkannt,
+  # Falsche Akzeptanz - von Angesicht zu Angesicht wird an jemand anderen vergeben, trotz des Auftretens dieser Fläche ist nicht in der Datenbank.
+
+Fehlerhafte Ergebnisse der Gesichtserkennung mittels PCA ist hauptsächlich auf die Lichtverhältnisse bei der Eingabe des Benutzers an die Datenbank als auch während der Bildaufnahme enthält Gesicht zu erkennen. Darüber hinaus kann die gleichen Hintergrund auf dem sich ein Gesicht für den Algorithmus, den Mann zu erkennen, verwirrend sein. Trotz dieser Belastungen Partnerschafts-und Kooperationsabkommen zur schnellen und positiven Überprüfung der Identität ermöglicht, sofern die frühere Schritte sind in Vorbereitung für Gesichtsbilderkennungsvorrichtung durchgeführt, so dass war der am wenigsten durch den Algorithmus mit dem Hintergrund zu verwechseln.
+Die Anwendung veranschaulicht die Funktionsweise des Gesichtserkennungssystem
+Als Ergebnis der Suche nach einer Lösung, um die Überprüfung der Identität von Gesicht, hieß iRecognizeYou Anwendung, die OpenCV-Methode in der PCA verwendet umgesetzt und zeigt das Gesicht Anerkennung System-Performance in der Offline-Version. IRecognizeYou Anwendung aus dem Projekt kann heruntergeladen werden unter: http://code.google.com/p/i-recognize-you/downloads/list, wo Sie auch suchen können den Quellcode, Fehlermeldungen, oder bekommen alle unsere Änderungen und lesen Die theoretische Beschreibung. IRecognizeYou Anwendung ermöglicht es Ihnen, Benutzer in die Datenbank offline, um die Kamera und die Datei (nach Zuordnung einen passenden Namen) mit der bedruckten geben, und natürlich das wichtigste Merkmal ist die Gesichtserkennung. Die Bedienung der wichtigsten Teile des Antrags war przedstawoine Zeichnungen Nr: 1 - Einführung und 2 - Anerkennung. Das Diagramm wurde die Oberfläche der Anwendung vorgestellt.
+
+==Zusammenfassung ==
+
+Zusammenfassend lässt sich sagen Sie Ihre Bewerbung an die Gesichtserkennung bei Principal Component Analysis (PCA) basieren kann geschlossen werden, dass diese Methode nicht zuverlässig ist, und trotz seiner Geschwindigkeit sollte als Ausgangspunkt für weitere Untersuchungen entnommen werden. Wenn Ihr Gesicht ist wert, den Bemühungen um die Erforschung ropoznawania Gesicht mit Hilfe eines neuronalen Netzes, die von der PCA-System unterstützt werden könnten, oder erstellen Sie ein neuronales Netzwerk, dessen Aufgabe es war, um das Bestimmen der Identität des Gesichts auf der Basis von bekannten Gesicht gerichtet. Mit der Gesichtserkennung mit PCA ist es auch wichtig Pre-Processing, was einen großen Einfluss auf die Qualität der Diagnose (Helligkeit Histogramm-Ausgleich), aber nicht richtig gewählt, kann die Ergebnisse (Klapp-) verschlechtern.
+
+== Referenzen ==
+
+  # Kennenlernen und Gesichtserkennung Face - Shevrim Emami aus: http://www.shervinemami.info/faceRecognition.html
+  # Learning OpenCV, Computer Vision mit der OpenCV-Bibliothek - Gary Bradski, Adrian Kaehler
+
+==Extras ==
+
+=== Abbildung 1: Einführung in das sogenannte Gesicht. Gesicht Datenbank machte die Entwicklung ihrer eigenen in yEd. ===
+https://sites.google.com/site/napiszprogrampl/home/Wprowadzanie 20twarzy%%%20do20bazy%20twarzy.png
+=== Abbildung 2: Gesichtserkennung (Initiation auf der rechten Seite), um ihre eigenen in yEd gemacht zu entwickeln. ===
+https://sites.google.com/site/napiszprogrampl/home/Rozpoznawanie%20twarzy.png
+=== Film, die Ihre Anwendung zeigt ===
+
+<wiki:video url="http://www.youtube.com/watch?v=zi7fCxtdUKs" width="480' height="360"/>
